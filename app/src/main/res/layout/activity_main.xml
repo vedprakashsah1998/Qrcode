@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+<!--  <Button
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:text="Scan QR code"
+      android:textSize="16sp"
+      android:id="@+id/btn_scan"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Result"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:id="@+id/result"/>-->
+  <com.wonderkiln.camerakit.CameraView
+      android:id="@+id/cameraview"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"/>
+  
+  <com.example.vpman.qrcode.Helper.GraphicOverlay
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:id="@+id/graphic_overlay"/>
+  
+  <Button
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:text="DETECT"
+      android:layout_alignParentBottom="true"
+      android:id="@+id/btn_detect"/>
+
+</RelativeLayout>
